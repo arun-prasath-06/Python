@@ -1,0 +1,10 @@
+Name=input("Enter your name:")
+Age=int(input("Enter your age:"))
+if Age < 5:
+    print(f"Hey {Name},you get a free entry!")
+elif Age > 5 and Age < 18:
+    print(f"Hey {Name},your Ticket price is 100.")
+elif Age > 19 and Age < 60:
+    print(f"Hey {Name},your Ticket price is 200.")
+else :
+    print(f"Hey {Name},your Ticket price is 120.")
