@@ -1,1 +1,11 @@
-Name=input("")
+name=input("enter your name")
+subjects=int(input('Enter your subbject'))
+marks=[]
+for i in range(1,subjects+1):
+    mark=float(input(f"Enter mark of the subject{i}"))
+    marks.append(mark)
+total=sum(marks)
+average=total / subjects
+print(f"hello{name}")
+print(f"total marks:{total}")
+print(f"Average marks:{average}")
