@@ -10,7 +10,8 @@ guess=0
 print("Am thinking of num between 1 to 100!!")
 while guess != secret_number:
     try:
-        guess= int(input("Enter num between 1 to 100"))
+        guess_input= input("Enter num between 1 to 100")
+        guess=int(guess_input)
         attempt += 1
         if guess < secret_number:
             print("Too low")
