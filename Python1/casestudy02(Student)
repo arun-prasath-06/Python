@@ -6,6 +6,6 @@ for i in range(1,subjects+1):
     marks.append(mark)
 total=sum(marks)
 average=total / subjects
-print(f"hello{name}")
+print(f"hello {name}")
 print(f"total marks:{total}")
 print(f"Average marks:{average}")

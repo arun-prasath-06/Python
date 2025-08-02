@@ -6,17 +6,15 @@ import random
 secret_number=random.randint(1,100)
 attempt=0
 guess=0
-
 print("Am thinking of num between 1 to 100!!")
 while guess != secret_number:
     try:
-        guess_input= input("Enter num between 1 to 100")
-        guess=int(guess_input)
+        guess= int(input("Enter num between 1 to 100"))
         attempt += 1
         if guess < secret_number:
             print("Too low")
         elif guess > secret_number:
-            print("too high")
+            print("Too high")
         else :
             print(f"correct you guessed in {attempt} attempts")
     except ValueError:
